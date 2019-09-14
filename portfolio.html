@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Danielle's Practice Portfolio</title>
-    
+
+<head>
+    <title>Danielle's Practice Portfolio</title>
+
     <!-- Viewport Stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <!-- body of the document -->
+<!-- body of the document -->
 
-    <body>
+<body>
     <!-- navigation will begin here -->
-        <div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a class="navLinks" href="./index.html">About Me</a></li>
-                    <li><a class="navLinks" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="navLinks" href="./contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>    
+    <div class="container-top">
+        <div class="titleCard">
+            <h2>danielle burrage</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a class="navLinks" href="./index.html">About Me</a></li>
+                <li><a class="navLinks" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="navLinks" href="./contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!-- navigation will end here -->
 
+
     <!-- body of document goes here -->
-        <div class="wrapperPortfolio">
-            <div class="titleCard">
-                <h2>danielle burrage</h2>   
-            </div>
+    <div class="wrapperPortfolio">
+        <div class=portfolioContent>
+            <h2 id="portfolioHead">Portfolio</h2>
 
-            <div class="portfolioContent">
-                <h2 id="portfolioHead">Portfolio</h2>
+            <hr>
 
-                <hr>
-
+            <div class="portfolioProjects">
                 <!-- project card 1 -->
                 <div class="projectCard">
-                    <img class="projectImage" src="./assets/images/image1.jpg" alt="Project Image Number One">
+                    <img class="projectImage" src="./images/image1.jpg" alt="Project Image Number One">
                     <div class="projectText">
                         <a href="#" target="_blank">Project A</a>
                     </div>
@@ -47,15 +50,15 @@
 
                 <!-- project card 2 -->
                 <div class="projectCard">
-                    <img class="projectImage" src="./assets/images/image2.jpg" alt="Project Image Number Two">
+                    <img class="projectImage" src="./images/image2.jpg" alt="Project Image Number Two">
                     <div class="projectText">
                         <a href="#" target="_blank">Project B</a>
                     </div>
                 </div>
-                
+
                 <!-- project card 3 -->
                 <div class="projectCard">
-                    <img class="projectImage" src="./assets/images/image3.jpg" alt="Project Image Number Three">
+                    <img class="projectImage" src="./images/image3.jpg" alt="Project Image Number Three">
                     <div class="projectText">
                         <a href="#" target="_blank">Project C</a>
                     </div>
@@ -63,32 +66,33 @@
 
                 <!-- project card 4 -->
                 <div class="projectCard">
-                    <img class="projectImage" src="./assets/images/image4.jpg" alt="Project Image Number Four">
-                    
+                    <img class="projectImage" src="./images/image4.jpg" alt="Project Image Number Four">
+
                     <div class="projectText">
                         <a href="#" target="_blank">Project D</a>
                     </div>
                 </div>
-                
+
                 <!-- project card 5 -->
                 <div class="projectCard">
-                    <img class="projectImage" src="./assets/images/image5.jpg" alt="Project Image Number Five">
-                    
+                    <img class="projectImage" src="./images/image5.jpg" alt="Project Image Number Five">
+
                     <div class="projectText">
                         <a href="#" target="_blank">Project E</a>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
-    <!-- footer of the document is here -->
+<!-- footer of the document is here -->
 
-    <footer class="footerContent clearfix">
-        <div>
-            <p>copyright &copy; 2019</p>
-        </div>
-    </footer>
-    <!-- footer of the document will end here -->
+<footer class="footerContent clearfix">
+    <div>
+        <p>copyright &copy; 2019</p>
+    </div>
+</footer>
+<!-- footer of the document will end here -->
 
 </html>
