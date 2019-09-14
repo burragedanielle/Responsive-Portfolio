@@ -91,6 +91,7 @@ hr {
 
 .contactContent {
     width: 75%;
+    margin: 0 auto;
 }
 
 .aboutMeText {
@@ -220,25 +221,69 @@ footer {
 
 
 
-/* media queries */
+/* ----------
+      media queries 
+      ----------------- */
 
 @media screen and (max-width: 980px) {
 
-    .wrapperAboutMe,
-    .wrapperPortfolio {
+    .wrapperPortfolio, 
+    .wrapperAboutMe {
         width: 100%;
     }
+
+    .wrapperContact {
+        width: 70%;
+    }
+
+    /* note to dev: the about me wrapper is still left-aligning; needs to be fixed */
 
     .portfolioContent,
     .aboutContent {
         width: 80%;
-        margin: 1rem auto;
-        padding: 1rem;
+        margin: 1em auto;
+        padding: 1em;
+    }
+
+    /* a note to dev: form needs some kind of margin */
+    .contactContent {
+        width: 75%;
+        margin: 1em auto;
     }
 
     .main-nav {
         margin-right: 30px;
         justify-content: flex-end;
+    }
+
+    /* contact form content */
+
+    input[type="text"] {
+        font-size: 1em;
+        border-radius: 5px;
+        padding: 10px 6px;
+        border: 1px solid #ccc;
+        overflow: auto;
+    }
+    
+    textarea {
+        resize: vertical;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    
+    #message {
+        padding: 10px 6px;
+        font-size: 1em;
+    }
+    
+    button {
+        padding: 20px 35px;
+        font-size: 18px;
+    }
+    
+    label {
+        font-size: 18px;
     }
 
 }
@@ -252,6 +297,10 @@ footer {
     .wrapperAboutMe,
     .wrapperPortfolio {
         width: 85%;
+    }
+
+    .wrapperContact {
+        width: 80%;
     }
 
 
@@ -290,6 +339,12 @@ footer {
         padding: 1rem;
     }
 
+    .contactContent {
+        width: 75%;
+        margin: 1em auto;
+    }
+
+
     #aboutMeHead {
         font-size: 1.5em;
     }
@@ -297,6 +352,38 @@ footer {
     #bioImage {
         width: 50%;
         height: 50%;
+    }
+
+
+    /* contact form content */
+
+    input[type="text"] {
+        font-size: 1em;
+        border-radius: 5px;
+        padding: 10px 6px;
+        border: 1px solid #ccc;
+        overflow: auto;
+    }
+    
+    textarea {
+        resize: vertical;
+        border-radius: 8px;
+        height: 120px;
+        border: 1px solid #ccc;
+    }
+    
+    #message {
+        padding: 10px 6px;
+        font-size: 1.125em;
+    }
+    
+    button {
+        padding: 20px 35px;
+        font-size: 18px;
+    }
+    
+    label {
+        font-size: 18px;
     }
 }
 
@@ -309,7 +396,8 @@ footer {
     }
 
     .wrapperAboutMe, 
-    .wrapperPortfolio {
+    .wrapperPortfolio, 
+    .wrapperContact {
         width: 95%;
     }
 
@@ -345,16 +433,26 @@ footer {
         font-size: 2em;
 }
 
+
+
+/* content classes editing width of content within wrapper */
     .aboutContent {
         padding: .5em 1.5em;
         margin-bottom: 30px;
     }
-
     .portfolioContent {
         width: 80%;
         margin: 1rem auto;
         padding: 1rem;
     }
+
+    .contactContent {
+        width: 70%;
+        margin: 1em auto;
+    }
+
+
+/* page content */
 
     .portfolioProjects {
         justify-content: column;
@@ -374,6 +472,39 @@ footer {
         height: 100%;
         margin-bottom: 1em;
     }
+
+/* contact form content */
+
+    input[type="text"] {
+        font-size: 1.125em;
+        border-radius: 5px;
+        padding: 10px 6px;
+        border: 1px solid #ccc;
+        overflow: auto;
+    }
+    
+    textarea {
+        resize: vertical;
+        border-radius: 8px;
+        height: 120px;
+        border: 1px solid #ccc;
+    }
+    
+    #message {
+        padding: 10px 6px;
+        font-size: 1.125em;
+    }
+    
+    button {
+        padding: 20px 35px;
+        font-size: 18px;
+    }
+    
+    label {
+        font-size: 18px;
+    }
+
+/* footer */
 
     footer {
         font-size: 14px;
