@@ -1,0 +1,345 @@
+body {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-image: url("../images/full-bloom.png");
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* top content is here */
+
+.container-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+.titleCard {
+    display: flex;
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 300px;
+    justify-content: center;
+    align-items: baseline;
+}
+
+ul {
+    display: flex; 
+    list-style-type: none;
+}
+
+.navLinks {
+    color: #777;
+    padding-right: 30px;
+}
+
+.navLinks:hover {
+    color: #4aaaa5;
+}
+
+/* body of the document */
+
+.wrapperAboutMe,
+.wrapperPortfolio,
+.wrapperContact {
+    width: 960px;
+    margin: 0 auto;
+    min-height: calc(100vh - 160px);
+}
+
+/* page content section */
+
+hr {
+    color: #ccc;
+}
+
+#aboutMeHead,
+#portfolioHead,
+#contactHead {
+    color:  #4aaaa5;
+    font-size: 1.5em;
+}
+
+.aboutContent,
+.portfolioContent,
+.contactContent {
+    background-color: #fff;
+    padding: 20px 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    display: inline-block;
+}
+
+.contactContent {
+    width: 75%;
+}
+
+.aboutMeText {
+    line-height: 1.5em;
+}
+
+#bioImage {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+    padding-top: 1em;
+}
+
+/* contact section form */
+
+form {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    font-size: 14px;
+    height: auto;
+    background: #eee;
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px 5px;
+    width: 100%;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+
+textarea {
+    max-width: 680px;
+    resize: vertical;
+    background: #eee;
+    border-radius: 8px;
+    height: 100px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+#message {
+    padding: 10px 5px;
+    font-size: 14px;
+    overflow: auto;   
+    width: 100%; 
+}
+
+button {
+    padding: 15px 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    background: #4aaaa5;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+/* portfolio project cards */
+
+.projectText, 
+.projectText { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 250px;
+    padding: 10px 0px;
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+}
+
+.projectCard {
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.projectImage {
+    width: 250px;
+    height: 250px;
+
+}
+
+
+clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* footer of the document is here */
+
+footer {
+    font-size: 14px;
+    color: #fff;
+    background-color: #666666;
+    text-align: center;
+    padding: 25px 0;
+    border-top: 8px solid #4aaaa5;
+}
+
+/* footer of the document will end here */
+
+
+
+
+/* media queries */
+
+@media screen and (max-width: 980px) {
+    .wrapperAboutMe {
+        width: 750px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 1.1em;
+    }
+
+    .wrapperAboutMe {
+        width: 75%;
+    }
+
+    /* top of page and navigation */
+
+    .container-top {
+        display: flex;
+        flex-flow: row;
+        width: 100%; 
+    }
+
+    .titleCard {
+        justify-content: center;
+        width: 75%;
+        font-size: 1em;
+    }
+    
+    .main-nav {
+        flex-flow: row;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline; 
+    }
+
+    /* content */
+
+    .aboutContent {
+        padding: .5em 1.1em;
+        margin-bottom: 30px;
+    }
+
+    #aboutMeHead {
+        font-size: 1.5em;
+    }
+    
+    .aboutContent {
+        margin-bottom: 0px;
+    }
+
+    #bioImage {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    /* ensure title card fits fully on the page, ensure nav bar is centered and on its own line */
+
+    body {
+        font-size: 1em;
+    }
+
+    .wrapperAboutMe {
+        width: 95%;
+    }
+
+    /* top of page and navigation */
+
+    .container-top {
+        display: flex;
+        flex-flow: column wrap-reverse;
+        width: 100%; 
+    }
+
+    .titleCard {
+        justify-content: center;
+        width: 100%;
+        font-size: 1.25em;
+    }
+    
+    .main-nav {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline; 
+    }
+
+
+/* content start */
+
+    #aboutMeHead {
+        font-size: 2em;
+}
+
+    .aboutContent {
+        padding: .5em 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .aboutMeText {
+        line-height: 1.5em;
+        margin: 0 auto;
+    }
+
+    #bioImage {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1em;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+}
+
+@-ms-viewport{
+    width: device-width;
+  }
