@@ -59,6 +59,10 @@ ul {
     min-height: calc(100vh - 160px);
 }
 
+.wrapperContact {
+    text-align: center;
+}
+
 /* page content section */
 
 hr {
@@ -229,20 +233,22 @@ footer {
 
     .wrapperPortfolio, 
     .wrapperAboutMe {
-        width: 100%;
+        width: 80%;
     }
 
     .wrapperContact {
         width: 70%;
     }
 
-    /* note to dev: the about me wrapper is still left-aligning; needs to be fixed */
-
     .portfolioContent,
     .aboutContent {
-        width: 80%;
+        width: 100%;
         margin: 1em auto;
         padding: 1em;
+    }
+
+    .aboutcontent {
+        text-align: center;
     }
 
     /* a note to dev: form needs some kind of margin */
@@ -385,6 +391,7 @@ footer {
     label {
         font-size: 18px;
     }
+
 }
 
 @media screen and (max-width: 640px) {
